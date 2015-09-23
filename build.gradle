@@ -32,3 +32,13 @@ subprojects {
     plugins.apply 'biz.aQute.bnd'
   }
 }
+
+task copyRunnables(type : Copy) {
+	from "org.amdatu.vertx.demo/generated/distributions/executable"
+  	include "*.jar"
+
+	into "release"
+}
+
+task run(dependsOn: ['copyRunnables']) {
+}
