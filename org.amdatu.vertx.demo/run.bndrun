@@ -8,14 +8,9 @@
 	io.vertx.core,\
 	org.apache.felix.dependencymanager;version='[4,5)',\
 	org.apache.felix.dependencymanager.runtime;version='[4,5)',\
-	org.apache.felix.dependencymanager.shell;version='[4,5)',\
 	org.apache.felix.metatype,\
 	org.apache.felix.eventadmin,\
 	org.apache.felix.configadmin,\
-	org.apache.felix.log,\
-	org.apache.felix.gogo.command,\
-	org.apache.felix.gogo.runtime,\
-	org.apache.felix.gogo.shell,\
 	com.fasterxml.jackson.core.jackson-annotations,\
 	com.fasterxml.jackson.core.jackson-core,\
 	com.fasterxml.jackson.core.jackson-databind,\
