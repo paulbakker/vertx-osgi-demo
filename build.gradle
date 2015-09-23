@@ -40,5 +40,12 @@ task copyRunnables(type : Copy) {
 	into "release"
 }
 
-task run(dependsOn: ['copyRunnables']) {
+task copyStatic(type : Copy) {
+	from "webroot"
+  	include "*.*"
+
+	into "release/webroot"
+}
+
+task run(dependsOn: ['copyRunnables', 'copyStatic']) {
 }
